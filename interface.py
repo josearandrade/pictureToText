@@ -25,15 +25,9 @@ def copiar_texto():
     janela.clipboard_clear()
     janela.clipboard_append(texto_selecionado)
 
-# Aplicar máscaras
-imagem_processada = aplicar_mascaras(imagem)
-
-# Salvar a imagem processada
-cv2.imwrite('images/imagem_processada.png', imagem_processada) 
-
 root = tk.Tk()
 
-root.title("Foto para texto")
+root.title("pictureToText")
 # Definir o tamanho da janela (largura x altura)
 largura_janela = 400
 altura_janela = 200
